@@ -12,8 +12,8 @@ module.exports = {
 
       },
       colors:{
-        flame:"#E1551E",
-        richblack:"#11151C",
+        flame:"#F7B2BD",
+        dkflame:"#E77A8C",
         lavender:"#B0BEE6",
         lightlaven:"#CCD6F1",
         thicklav:"#86A4F7",

@@ -8,7 +8,7 @@ export default function Header(){
     return <>
     <section className="px-6 pt-6  bg-white  ">    
     <header className="flex justify-between px-10 pt-5  bg-lightlaven rounded-t-2xl ">
-        <a href="#" className="font-cursive text-gray-600 text-4xl md:pb-2  md:mb-3  border-r-2 border-lavender pr-4 flex"> Myself
+        <a href="#" className="font-cursive text-gray-600 text-4xl   border-r-2 border-lavender pr-4 flex"> Myself
         </a>
         <nav className="hidden  md:block">
         <ul className="flex  pb-2 mt-2 text-white font-marker text-2xl ">
