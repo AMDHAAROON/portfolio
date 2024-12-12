@@ -6,7 +6,9 @@ module.exports = {
       fontFamily:{
         marker:['Concert One'],
         chalk:['Edu AU VIC WA NT Arrows'],
-        cursive:['Cedarville Cursive'],
+        cursive:['Cookie'],
+        true:['Yuji Mai'],
+        design:['Oleo Script'],
 
       },
       colors:{
@@ -14,6 +16,9 @@ module.exports = {
         richblack:"#11151C",
         lavender:"#B0BEE6",
         lightlaven:"#CCD6F1",
+        thicklav:"#86A4F7",
+        blood:"#8D5B4C",
+        mint:"#CCF5AC",
       },
     },
   },
