@@ -8,15 +8,15 @@ export default function Header(){
     return <>
     <section className="px-6 pt-4  bg-white  ">    
     <header className="flex justify-between px-10 pt-5  bg-lightlaven rounded-t-2xl ">
-        <a href="#" className="font-cursive text-gray-600 text-4xl   border-r-2 border-lavender pr-4 flex"> Myself
+        <a href="#" className="font-cursive text-gray-600 text-4xl   border-r-2 border-white pr-4 flex"> Myself
         </a>
         <nav className="hidden  md:block">
         <ul className="flex   mt-2 text-white font-marker text-2xl ">
-           <li> <a href="#" className='hover:text-gray-600'>Home</a></li>
-           <li> <a href="#" className='hover:text-gray-600'>About</a></li>
-            <li><a href="#" className='hover:text-gray-600'>Projects</a></li>
-            <li><a href="#" className='hover:text-gray-600'>Resume</a></li>
-            <li><a href="#" className='hover:text-gray-600'>Contact</a></li>
+           <li> <a href="/" className='hover:text-gray-600'>Home</a></li>
+           <li> <a href="#about" className='hover:text-gray-600'>About</a></li>
+            <li><a href="#project" className='hover:text-gray-600'>Projects</a></li>
+            <li><a href="#resume" className='hover:text-gray-600'>Resume</a></li>
+            <li><a href="#contact" className='hover:text-gray-600'>Contact</a></li>
         </ul>
         </nav> 
       
@@ -24,13 +24,13 @@ export default function Header(){
        
         { toggleMenu && <nav className="block md:hidden  ">
            
-        <ul className="flex flex-col w-full h-2/3    mobile-nav   ">
+        <ul onClick={()=>settoggleMenu(!toggleMenu)} className="flex flex-col     mobile-nav  ">
        
-           <li> <a href="#" className='hover:text-white'>Home</a></li>
-           <li> <a href="#" className='hover:text-white' >About</a></li>
-            <li><a href="#" className='hover:text-white'>Projects</a></li>
-            <li><a href="#" className='hover:text-white'>Resume</a></li>
-            <li><a href="#" className='hover:text-white'>Contact</a></li>
+           <li> <a href="/" className='hover:text-white '>Home</a></li>
+           <li> <a href="#about" className='hover:text-white' >About</a></li>
+            <li><a href="#project" className='hover:text-white'>Projects</a></li>
+            <li><a href="#resume" className='hover:text-white'>Resume</a></li>
+            <li><a href="#contact" className='hover:text-white'>Contact</a></li>
            
         </ul>
        
