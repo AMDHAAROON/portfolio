@@ -17,8 +17,10 @@ module.exports = {
         lavender:"#B0BEE6",
         lightlaven:"#CCD6F1",
         thicklav:"#86A4F7",
-        blood:"#8D5B4C",
-        mint:"#CCF5AC",
+        mint:"#88ECCE",
+        dmint:"#0DC18B",
+       
+      
       },
     },
   },
