@@ -11,7 +11,7 @@ export default function Resume(){
         <div className=' md:w-1/2 my-auto  '>
         <div className='flex flex-col pt-5 text-center md:text-start '>
             
-            <h1 className='text-3xl text-white font-marker pb-1  md:border-b-4 border-dkflame md:w-[100px]'>Resume</h1>
+            <h1 className='text-3xl text-white font-marker pb-1  md:border-b-4 border-white md:w-[100px]'>Resume</h1>
         <p className='font-bold pt-3 text-gray-800 text-lg leading-relaxed'>You can view my Resume <a ><button className=' uppercase text-white px-3 py-1 bg-flame hover:bg-dkflame rounded-xl'><a href={config.link}>Download</a></button></a></p> 
           
             </div>
