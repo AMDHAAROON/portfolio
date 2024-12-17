@@ -24,13 +24,13 @@ export default function Header(){
        
         { toggleMenu && <nav className="block md:hidden  ">
            
-        <ul onClick={()=>settoggleMenu(!toggleMenu)} className="flex flex-col     mobile-nav  ">
+        <ul onClick={()=>settoggleMenu(!toggleMenu)} className="flex flex-col py-16 mobile-nav animate-slide-down  ">
        
-           <li> <a href="/" className='hover:text-white '>Home</a></li>
-           <li> <a href="#about" className='hover:text-white' >About</a></li>
-            <li><a href="#project" className='hover:text-white'>Projects</a></li>
-            <li><a href="#resume" className='hover:text-white'>Resume</a></li>
-            <li><a href="#contact" className='hover:text-white'>Contact</a></li>
+           <li> <a href="/" className='text-white pb-3 border-b-2 border-white  '>Home</a></li>
+           <li> <a href="#about" className='text-white pb-3 border-b-2 border-white ' >About</a></li>
+            <li><a href="#project" className='text-white pb-3 border-b-2 border-white'>Projects</a></li>
+            <li><a href="#resume" className='text-white pb-3 border-b-2 border-white'>Resume</a></li>
+            <li><a href="#contact" className='text-white pb-3 border-b-2 border-white'>Contact</a></li>
            
         </ul>
        

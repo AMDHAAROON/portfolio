@@ -17,10 +17,10 @@ export default function Project(){
         ]
     }
 
-    return <div className='pb-4 px-6 'id='project'>    
+    return <div className='pb-4 px-6 dark'id='project'>    
         <section className='bg-mint rounded-2xl p-6'>
        
-        <div className='text-center text-4xl font-marker  text-white border-b-4 border-dmint w-[150px] mx-auto'>
+        <div className='text-center text-4xl font-marker  text-white border-b-4 border-dmint  w-[150px] mx-auto'>
         <h1 className='pb-2'>Projects</h1>
         </div>
         

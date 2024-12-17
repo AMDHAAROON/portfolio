@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [ "./src/**/*.{js,jsx,ts,tsx}",],
+  darkMode:'class',
   theme: {
     extend: {
       fontFamily:{
@@ -11,8 +12,10 @@ module.exports = {
         design:['Oleo Script'],
 
       },
+      
       colors:{
-        flame:"#F7B2BD",
+        flame:"#FD6D85",
+        amarnath:'#D6415A',
         dkflame:"#E77A8C",
         lavender:"#6C91FF",
         lightlaven:"#CCD6F1",
@@ -22,6 +25,7 @@ module.exports = {
        
       
       },
+     
     },
   },
   plugins: [],
