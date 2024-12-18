@@ -35,7 +35,7 @@ export default function Project(){
                     <p className='justify-center pt-3  font-bold text-gray-700 text-sm'><span className=' text-dmint font-bold pr-2'>Technologies:</span> Utilized HTML, CSS, JavaScript, React, and Tailwind CSS to create a responsive and user-friendly interface.</p>
                     <p className='justify-center pt-3  font-bold text-gray-700 text-sm'><span className=' text-dmint font-bold pr-2'>Role : </span> Acted as a Frontend Developer, collaborating with a team to design and develop the college website</p>
                    <div className='py-5 md:pt-10  '>
-                    <button className=' flex   py-2 pl-3 pr-5 hover:border border-red-600 font-bold text-white bg-red-400 rounded-xl'><a href='https://github.com/AMDHAAROON/t'>Explore</a>
+                    <button className=' flex   py-2 pl-3 pr-5 hover:border border-red-600 font-bold text-white bg-red-400 rounded-xl'><a href='https://github.com/AMDHAAROON'>Explore</a>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 pt-1 pl-1 ">
   <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd" />
 </svg>
@@ -53,7 +53,7 @@ export default function Project(){
                     <p className='justify-center pt-3  font-bold text-gray-700 text-sm'><span className='text-dmint font-bold pr-2'>Process:</span> Currently in development, following a structured process including planning, designing, coding, testing, and future deployment.</p>
                     <p className='justify-center pt-3  font-bold text-gray-700 text-sm'><span className='text-dmint font-bold pr-2'>Role: </span>Independently designed and developed a tourism website using HTML, CSS, JavaScript, and Tailwind CSS.</p>
                    <div className='py-5    '>
-                    <button className=' flex hover:border border-red-600 py-2 pl-3 pr-5 font-bold text-white bg-red-400 rounded-xl'><a href='https://github.com/AMDHAAROON/t'>Explore</a>
+                    <button className=' flex hover:border border-red-600 py-2 pl-3 pr-5 font-bold text-white bg-red-400 rounded-xl'><a href='https://github.com/AMDHAAROON/Tourism-website'>Explore</a>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 pt-1 pl-1 ">
   <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd" />
 </svg>
