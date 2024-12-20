@@ -1,7 +1,7 @@
 import resume from '../assets/resume.jpg'
 export default function Resume(){
     const config={
-        link:'https://www.canva.com/design/DAGUHVL4UWg/qOqls3gNV_tB1I4KSMtYvA/edit?utm_content=DAGUHVL4UWg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'
+        link:'https://drive.google.com/file/d/1T_r4suPMEmv0gnEo54Q3FxLYTxk0PEwD/view?usp=sharing'
     }
     return<div className=' px-6 pb-4 'id='resume'>
     <section className='flex flex-col md:flex-row  bg-flame  rounded-2xl p-8'  >
