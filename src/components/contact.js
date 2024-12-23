@@ -14,8 +14,8 @@ export default function Contact(){
           
       <p className='font-bold pt-3 text-gray-800 text-xl'>If you need more details, please get in touch.</p> 
 
-          <p className="pt-4  pb-2 text-sm md:text-lg font-mono"><span className="font-bold text-1xl text-lavender"<a href="mailto:{config.email}">Email : </span>{config.email}</a></p>
-          <p className="pb-4 text-sm md:text-lg font-mono"><span className="font-bold text-1xl text-lavender"<a href="tel:{config.phone}">>Phone : </span>{config.phone}</p>
+          <p className="pt-4  pb-2 text-sm md:text-lg font-mono"><span className="font-bold text-1xl text-lavender"<a href="mailto:{config.email}">Email :</a> </span>{config.email}</p>
+          <p className="pb-4 text-sm md:text-lg font-mono"><span className="font-bold text-1xl text-lavender"<a href="tel:{config.phone}">Phone : </a></span>{config.phone}</p>
             
         </div>
         </div>
