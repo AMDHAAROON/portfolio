@@ -2,7 +2,7 @@
 export default function Contact(){
     const config={
         email:'mdhaaroo2020@gmail.com',
-        phone:'+919500669628',
+        phone:'+91 9500669628',
     }
     return<div className=' px-6 pb-4' id="contact">
     <section className='flex flex-col  bg-lightlaven rounded-2xl p-8' >
@@ -14,8 +14,8 @@ export default function Contact(){
           
       <p className='font-bold pt-3 text-gray-800 text-xl'>If you need more details, please get in touch.</p> 
 
-          <p className="pt-4  pb-2 text-sm md:text-lg font-mono"><span className="font-bold text-1xl text-lavender"<a href="mailto:{config.email}">Email :</a> </span>{config.email}</p>
-          <p className="pb-4 text-sm md:text-lg font-mono"><span className="font-bold text-1xl text-lavender"<a href="tel:{config.phone}">Phone : </a></span>{config.phone}</p>
+          <p className="pt-4  pb-2 text-sm md:text-lg font-mono"><span className="font-bold text-1xl text-lavender">Email : </span><a href="mailto:mdhaaroon2020@gmail.com">{config.email}</a></p>
+          <p className="pb-4 text-sm md:text-lg font-mono"><span className="font-bold text-1xl text-lavender">Phone : </span><a href="tel:+919500669628">{config.phone}</a></p>
             
         </div>
         </div>
