@@ -7,7 +7,7 @@ export default function(){
         line3:"Currently, I am enhancing my skills in front-end development and am eager to work as an intern or in any opportunity that allows me to contribute, learn, and grow in the IT field.",
     }
     
-    return<div className='px-6 pb-4 dark 'id='about' >
+    return<div className='px-6 pb-4 dark cursor-default'id='about' >
     <section className='flex flex-col md:flex-row bg-flame rounded-2xl p-12 md:p-20 '  >
         <div className='md:w-1/2  md:mr-10 '>
             <img src={aboutimg} className='md:h-auto  md:mx-6 md:my-10 lg:my-0 '/>

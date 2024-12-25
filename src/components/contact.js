@@ -4,7 +4,7 @@ export default function Contact(){
         email:'mdhaaroo2020@gmail.com',
         phone:'+91 9500669628',
     }
-    return<div className=' px-6 pb-4' id="contact">
+    return<div className=' px-6 pb-4 cursor-default' id="contact">
     <section className='flex flex-col  bg-lightlaven rounded-2xl p-8' >
         <div className=" text-center">
         <div className=' items-center    '>
