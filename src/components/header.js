@@ -7,16 +7,16 @@ export default function Header(){
    const [toggleMenu,settoggleMenu]= useState(false);
     return <>
     <section className="px-6 pt-4  bg-white cursor-default ">    
-    <header className="flex justify-between px-10 pt-5  bg-lightlaven rounded-t-2xl ">
+    <header className="flex justify-between px-10 py-5  bg-lightlaven rounded-t-2xl ">
         <a href="#" className="font-cursive text-gray-600 text-4xl   border-r-2 border-white pr-4 flex"> Myself
         </a>
         <nav className="hidden  md:block">
-        <ul className="flex   mt-2 text-white font-marker text-2xl ">
-           <li> <a href="/" className='hover:text-gray-600'>Home</a></li>
-           <li> <a href="#about" className='hover:text-gray-600'>About</a></li>
-            <li><a href="#project" className='hover:text-gray-600'>Projects</a></li>
-            <li><a href="#resume" className='hover:text-gray-600'>Resume</a></li>
-            <li><a href="#contact" className='hover:text-gray-600'>Contact</a></li>
+        <ul className="flex   mt-2 text-gray-600 font-marker text-2xl ">
+           <li> <a href="/" className='pb-1 border-b-4 border-lightlaven hover:border-white transition-all duration-300'>Home</a></li>
+           <li> <a href="#about" className='pb-1 border-b-4 border-lightlaven hover:border-white transition-all duration-300'>About</a></li>
+            <li><a href="#project" className='pb-1 border-b-4 border-lightlaven hover:border-white transition-all duration-300'>Projects</a></li>
+            <li><a href="#resume" className='pb-1 border-b-4 border-lightlaven hover:border-white transition-all duration-300'>Resume</a></li>
+            <li><a href="#contact" className='pb-1 border-b-4 border-lightlaven hover:border-white transition-all duration-300'>Contact</a></li>
         </ul>
         </nav> 
       
