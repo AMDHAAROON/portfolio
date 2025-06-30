@@ -38,3 +38,25 @@ header ul li{
     opacity: 1;
   }
 }
+
+.caret {
+  display: inline-block;
+  width: 12px;
+  height: 1.2rem;
+  background-color: #333;
+  animation: blink 1.8s steps(2, start) infinite;
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.float-img {
+  animation: floatY 2s ease-in-out infinite;
+}
