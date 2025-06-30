@@ -10,13 +10,13 @@ module.exports = {
         cursive:['Cookie'],
         true:['Yuji Mai'],
         design:['Oleo Script'],
-
+        cal:[ "Cal Sans"], 
       },
       
       colors:{
         flame:"#FD6D85",
         amarnath:'#D6415A',
-        dkflame:"#E77A8C",
+        dkflame:"C90021",
         lavender:"#6C91FF",
         lightlaven:"#CCD6F1",
         thicklav:"#86A4F7",
