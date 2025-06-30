@@ -21,7 +21,7 @@ export default function TypingHeading() {
     }
     
     return<div className='px-6 pb-4 dark cursor-default 'id='about' >
-    <section className='flex flex-col md:flex-row border-2 border-lightlaven  shadow-2xl rounded-2xl p-12 md:p-20 '  >
+    <section className='flex flex-col md:flex-row border-2 border-[#D7DDF0] shadow-2xl rounded-2xl p-12 md:p-20 '  >
         <div className='md:w-1/2  md:mr-10 '>
             <img src={aboutimg} className='md:h-auto  md:mx-6 md:my-10 lg:my-0 float-img'/>
         </div>

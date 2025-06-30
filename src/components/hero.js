@@ -15,8 +15,8 @@ export default function Hero(){
 return<div className='pb-4 cursor-default' id="hero">
  <section className='flex  flex-col md:flex-row bg-lightlaven  mx-6  py-16  px-6   text-black  '>
     <div className='md:w-1/2  text-4xl font-chalk  justify-center  md:pt-8 text-center md:ml-20 leading-normal md:leading-snug text-black flex flex-col' >
-    <h1 >Hey !<br/>I'm Mohamed<span className='text-black font-marker hover:text-white cursor-pointer'> Haaroon<span className='caret'></span></span>
-    <p className='text-lg md:text-xl font-mono mt-2'>{config.subtitle}</p>
+    <h1 >Hey !<br/>I'm Mohamed<span className='text-black font-marker hover:text-white cursor-pointer'> Haaroon,</span>
+    <p className='text-lg md:text-xl font-mono mt-2'>{config.subtitle}<span className='caret'></span></p>
      </h1>
      <div className='flex  mx-auto  md:justify-center mt-6'>
         <a href={config.social.linked} className='ml-12 mr-10 text-white hover:text-black'><FaLinkedin size={40}/></a>
