@@ -1,69 +1,122 @@
 import clg from '../assets/clg.jpg';
 import tour from '../assets/tour.jpeg';
+import { useState,useEffect } from "react";
+import { useInView } from 'react-intersection-observer';
+import Typewriter from 'typewriter-effect';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 
-export default function Project(){
-    const config={
-        projects:[
-            {
-                
-                link:'',
-            },
-            {
-                
-                link:'',
-            },
+export default function Project() {
+  // const [activeIndex, setActiveIndex] = useState(1);
+  const [, setDirection] = useState("right"); // for slide direction
 
-        ]
+  const projects = [
+    {
+      title: "Cultural Hub Website",
+      description: "A dynamic event and workshop platform built with React and Tailwind.",
+      image: clg,
+      link: "https://mohamed-haaroon.web.app"
+    },
+    {
+      title: "Tourism Website",
+      description: "Tourism website using HTML, CSS, JavaScript, and Tailwind CSS.",
+      image: tour,
+      link: "https://github.com/AMDHAAROON/Tourism-website"
+    },
+    {
+      title: "College Website",
+      description: "Frontend developer role using React and Tailwind CSS.",
+      image: clg,
+      link: "https://github.com/AMDHAAROON"
     }
+  ];
 
-    return <div className='pb-4 px-6 dark cursor-default'id='project'>    
-        <section className='bg-mint rounded-2xl p-6'>
-       
-        <div className='text-center text-4xl font-marker  text-white border-b-4 border-dmint  w-[150px] mx-auto'>
-        <h1 className='pb-2'>Projects</h1>
+  const [activeIndex, setActiveIndex] = useState(Math.floor(projects.length / 2));
+
+  const goLeft = () => {
+    setDirection("left");
+    setActiveIndex((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
+  };
+
+  const goRight = () => {
+    setDirection("right");
+    setActiveIndex((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
+  };
+ 
+   const { ref, inView } = useInView({ threshold: 0.9 });
+  const [key, setKey] = useState(0);
+
+  useEffect(() => {
+    if (inView) {
+      setKey(prev => prev + 1); // Force remount on view
+    }
+  }, [inView]);
+
+  return (
+    <div className='pb-4 px-3 cursor-default bg-[#e0e0e0]' id='project'>
+      <section className='bg-lightlaven border-x-2 border-b-2 border-[#ffffff] shadow-2xl rounded-2xl p-6'>
+        <h1 ref={ref} className='text-center text-5xl text-white font-cal mb-10'> {inView && (
+        <Typewriter
+          key={key} // this remounts the component
+          onInit={(typewriter) => {
+            typewriter.typeString('Projects').start();
+          }}
+        />
+      )}</h1>
+
+        {/* Desktop View */}
+        <div className="hidden md:flex justify-center gap-6 mb-8">
+          {projects.map((project, idx) => (
+            <div
+              key={idx}
+              className={`w-80 h-64 rounded-lg overflow-hidden shadow-lg bg-white transition-all duration-300 ${
+                activeIndex === idx ? "opacity-100 scale-105" : "opacity-40"
+              }`}
+              onMouseEnter={() => setActiveIndex(idx)}
+            >
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-40 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-lg font-semibold">{project.title}</h3>
+                <p className="text-sm text-gray-600">{project.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
-        
-        <div className='my-6  flex flex-col md:flex-row gap-8 justify-center  '>
-            
-            <div className='border-4 border-dmint rounded-2xl  bg-gray-100 '>
-            <div className='p-4'>
-                <img src={clg} className='  h-[200px] md:h-[250px] w-[350px] rounded-2xl'/>
-                </div>
-                <div className='md:w-[350px] pl-5 md:pl-5 md:pr-2'>
-                    <h1 className='font-marker text-2xl  text-gray-700 border-b-4 border-dmint w-[170px] '>college website</h1>
-                    <p className='justify-center pt-3  font-bold text-gray-700 text-sm'><span className=' text-dmint font-bold pr-2'>Technologies:</span> Utilized HTML, CSS, JavaScript, React, and Tailwind CSS to create a responsive and user-friendly interface.</p>
-                    <p className='justify-center pt-3  font-bold text-gray-700 text-sm'><span className=' text-dmint font-bold pr-2'>Role : </span> Acted as a Frontend Developer, collaborating with a team to design and develop the college website</p>
-                   <div className='py-5 md:pt-10  '>
-                    <button className=' flex   py-2 pl-3 pr-5 hover:border border-red-600 font-bold text-white bg-red-400 rounded-xl'><a href='https://github.com/AMDHAAROON'>Explore</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 pt-1 pl-1 ">
-  <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd" />
-</svg>
 
+        {/* Mobile View */}
+        <div className="md:hidden flex items-center justify-center gap-4 mt-8">
+          <button onClick={goLeft} className="text-white p-2 rounded-full bg-[#ffffff1a] hover:bg-white hover:text-black transition">
+  <ArrowBackIosNewIcon fontSize="medium" />
 </button>
-                    </div>
-                </div>
-                </div>
-            <div className='border-4 border-dmint rounded-2xl shadow-lg bg-gray-100'>
-                <div className='p-4 '>
-                <img src={tour} className=' h-[200px] md:h-[250px] w-[350px] rounded-2xl '/>
-                </div>
-                <div className='md:w-[350px] pl-5  pr-2'>
-                    <h1 className='font-marker text-2xl  text-gray-700 border-b-4 border-dmint w-[180px] '>Tourism website</h1>
-                    <p className='justify-center pt-3  font-bold text-gray-700 text-sm'><span className='text-dmint font-bold pr-2'>Process:</span> Currently in development, following a structured process including planning, designing, coding, testing, and future deployment.</p>
-                    <p className='justify-center pt-3  font-bold text-gray-700 text-sm'><span className='text-dmint font-bold pr-2'>Role: </span>Independently designed and developed a tourism website using HTML, CSS, JavaScript, and Tailwind CSS.</p>
-                   <div className='py-5    '>
-                    <button className=' flex hover:border border-red-600 py-2 pl-3 pr-5 font-bold text-white bg-red-400 rounded-xl'><a href='https://github.com/AMDHAAROON/Tourism-website'>Explore</a>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 pt-1 pl-1 ">
-  <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10Z" clip-rule="evenodd" />
-</svg>
 
-</button>
-                    </div>
-                </div>
-                </div>
-        </div>
-        </section>
+          {/* Sliding container */}
+          
+<div className="relative w-80 h-64 overflow-hidden">
+  <div className="w-full h-full bg-white rounded-lg shadow-lg overflow-hidden">
+    <img
+      src={projects[activeIndex].image}
+      alt={projects[activeIndex].title}
+      className="w-full object-cover max-h-44 md:max-h-52"
+    />
+    <div className="p-4">
+      <h3 className="text-lg font-semibold">{projects[activeIndex].title}</h3>
+      <p className="text-sm text-gray-600">{projects[activeIndex].description}</p>
     </div>
-    
+  </div>
+</div>
+
+
+
+          <button onClick={goRight} className="text-white p-2 rounded-full bg-[#ffffff1a] hover:bg-white hover:text-black transition">
+  <ArrowForwardIosIcon fontSize="medium" />
+</button>
+        </div>
+      </section>
+    </div>
+  );
 }
