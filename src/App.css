@@ -75,3 +75,15 @@ header ul li{
     visibility: hidden;
   }
 }
+.contact {
+  display: inline-block;
+  width: 12px;
+  height: 1.8rem;
+  background-color: #ffffff;
+  animation: blink 1.8s steps(2, start) infinite;
+}
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}

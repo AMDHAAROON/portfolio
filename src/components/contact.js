@@ -4,13 +4,13 @@ export default function Contact(){
         email:'mdhaaroo2020@gmail.com',
         phone:'+91 9500669628',
     }
-    return<div className=' px-6 pb-4 cursor-default' id="contact">
-    <section className='flex flex-col  bg-lightlaven rounded-2xl p-8' >
+    return<div className=' px-6 pb-4 cursor-default bg-[#e0e0e0] ' id="contact">
+    <section className='flex flex-col  bg-lightlaven rounded-2xl p-8 border-b-2 border-[#ffffff] shadow-xl' >
         <div className=" text-center">
         <div className=' items-center    '>
      
             
-            <h1 className=' text-2xl md:text-3xl text-black font-chalk pb-1 ] '>Contact</h1>
+            <h1 className=' text-2xl md:text-5xl text-white font-cal pb-1 ] '>Let’s talk <span className="contact"></span></h1>
           
       <p className='font-bold pt-3 text-gray-800 text-xl'>If you need more details, please get in touch.</p> 
 

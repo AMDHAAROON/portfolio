@@ -7,6 +7,7 @@ import Header from './components/header';
 import Hero from './components/hero';
 import Project from './components/project';
 import Resume from './components/resume';
+import Skill from './components/skill';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Header/>
       <Hero/>
       <About/>
+      <Skill/>
       <Project/>
       <Resume/>
       <Contact/>
